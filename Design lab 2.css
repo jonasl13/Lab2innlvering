@@ -1,0 +1,38 @@
+/*Farge på bakgrunn, hvilken type tekst og farge i bodyen, og plassering av teksten*/
+body {
+  padding-left: 25em;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  color: Orange;
+  background-color: blue }
+/*plassering av navigeringsbaren*/
+  ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em }
+/*tekst type heading*/
+  h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+/*farge og størrelse på navbaren*/
+ul.navbar li {
+  background: white;
+  margin: 0.3em 0;
+  padding: 0.2em;
+  border-right: 1em solid black }
+/*tekstdekorasjon*/
+  ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: red }
+a:visited {
+  color: purple }
+/*Plassering av adressefeltet*/
+  address {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: thin dotted }

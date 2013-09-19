@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Script Language=JavaScript>
+
+function printToOutputBox(selectobj){
+var e_proglangs = document.getElementById("proglangs");
+var e_outputbox = document.getElementById("outputbox");
+e_outputbox.innerHTML = "Du har selektert programmeringsspr&aringket " + e_proglangs.options[selectobj.selectedIndex].text;
+}
+
+</Script>
+
+<form>
+<label for="proglangs">Velg:</label>
+<select name="select-pl" id="proglangs" onChange="printToOutputBox(this)">
+<option value="ActionScript">ActionScript</option>
+<option value="AppleScript">AppleScript</option>
+<option value="Asp">Asp</option>
+<option value="BASIC">BASIC</option>
+<option value="C">C</option>
+<option value="C++">C++</option>
+<option value="Clojure">Clojure</option>
+<option value="COBOL">COBOL</option>
+<option value="ColdFusion">ColdFusion</option>
+<option value="Erlang">Erlang</option>
+<option value="Fortran">Fortran</option>
+<option value="Groovy">Groovy</option>
+<option value="Haskell">Haskell</option>
+<option value="Java">Java</option>
+<option value="JavaScript">JavaScript</option>
+<option value="Lisp">Lisp</option>
+<option value="Perl">Perl</option>
+<option value="PHP">PHP</option>
+<option value="Python">Python</option>
+<option value="Ruby">Ruby</option>
+<option value="Scala">Scala</option>
+<option value="Scheme">Scheme</option>
+</select>
+</form>
+<p><br /><h1>Programmeringsspr&#229;k - hva er det?</h1>
+<span id="outputbox">Velkommen til en mystisk verden av programmeringsspr&#229;k</span>
+<script src="proglangs.js"></script>
+
+<link rel="stylesheet" href="Design lab 2.css">
+
+</head>
+<body>
+<!--Navigeringsside-->
+<ul class="navbar">
+<li>
+<button onclick="myFunction('er','konstruksjon')">Hjem</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + ", under " + job);
+}
+</script>
+
+<li>
+<button onclick="myFunction('er','konstruksjon')">Kronologisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + ", under " + job);
+}
+</script>
+
+<li>
+<button onclick="myFunction('er','konstruksjon')">Hierarkisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + ", under " + job);
+}
+</script>
+
+<li>
+<button onclick="myFunction('er','konstruksjon')">Alfabetisk</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Siden " + name + ", under " + job);
+}
+</script>
+
+</ul>
+
+<!--Navn og dato-->
+<address>Laget 17.September 2013 <br>
+av Jonas Ljos&#229;k </address>
+</body>
+</html>
+
