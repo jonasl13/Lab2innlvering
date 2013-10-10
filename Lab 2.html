@@ -1,98 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<Script Language=JavaScript>
+<meta charset="utf-8">
 
-function printToOutputBox(selectobj){
-var e_proglangs = document.getElementById("proglangs");
-var e_outputbox = document.getElementById("outputbox");
-e_outputbox.innerHTML = "Du har selektert programmeringsspr&aringket " + e_proglangs.options[selectobj.selectedIndex].text;
-}
+  <title>Programmeringsspråk</title>
 
-</Script>
+  <link rel="stylesheet" href="Design lab 2.css">
 
-<form>
-<label for="proglangs">Velg:</label>
-<select name="select-pl" id="proglangs" onChange="printToOutputBox(this)">
-<option value="ActionScript">ActionScript</option>
-<option value="AppleScript">AppleScript</option>
-<option value="Asp">Asp</option>
-<option value="BASIC">BASIC</option>
-<option value="C">C</option>
-<option value="C++">C++</option>
-<option value="Clojure">Clojure</option>
-<option value="COBOL">COBOL</option>
-<option value="ColdFusion">ColdFusion</option>
-<option value="Erlang">Erlang</option>
-<option value="Fortran">Fortran</option>
-<option value="Groovy">Groovy</option>
-<option value="Haskell">Haskell</option>
-<option value="Java">Java</option>
-<option value="JavaScript">JavaScript</option>
-<option value="Lisp">Lisp</option>
-<option value="Perl">Perl</option>
-<option value="PHP">PHP</option>
-<option value="Python">Python</option>
-<option value="Ruby">Ruby</option>
-<option value="Scala">Scala</option>
-<option value="Scheme">Scheme</option>
-</select>
-</form>
-<p><br /><h1>Programmeringsspr&#229;k - hva er det?</h1>
-<span id="outputbox">Velkommen til en mystisk verden av programmeringsspr&#229;k</span>
-<script src="proglangs.js"></script>
-
-<link rel="stylesheet" href="Design lab 2.css">
-
+<script src="Lab2.js"></script>
 </head>
+
 <body>
-<!--Navigeringsside-->
+
+<center>
+
+<!-- Meny på siden-->
+
 <ul class="navbar">
-<li>
-<button onclick="myFunction('er','konstruksjon')">Hjem</button>
+    <li><a href="Lab 2.html">Hjem</a></li> 
+    <li><a href= "#" onclick= "alert('Denne siden er under konstruksjon')">Kronologisk</a></li>
+    <li><a href= "#" onclick= "alert('Denne siden er under konstruksjon')">Hierarkisk</a></li>
+	<li><a href= "#" onclick= "alert('Denne siden er under konstruksjon')">Alfabetisk</a></li>
+</ul>
 
-<script>
-function myFunction(name,job)
-{
-alert("Siden " + name + ", under " + job);
-}
-</script>
+<!-- Tekst midt på siden-->
 
-<li>
-<button onclick="myFunction('er','konstruksjon')">Kronologisk</button>
+<h1>Programmeringsspråk - Hva er det?</h1>
+          	
+    <br/>
+    <p>Velkommen til en mystisk verden av progameringsspråk!
 
-<script>
-function myFunction(name,job)
-{
-alert("Siden " + name + ", under " + job);
-}
-</script>
+<!-- Rullgardin -->
 
-<li>
-<button onclick="myFunction('er','konstruksjon')">Hierarkisk</button>
+<hr width="60%" size="1" noshade="noshade">
+</br>
 
-<script>
-function myFunction(name,job)
-{
-alert("Siden " + name + ", under " + job);
-}
-</script>
+<div id="content">
 
-<li>
-<button onclick="myFunction('er','konstruksjon')">Alfabetisk</button>
+	<Script Language=JavaScript>
 
-<script>
-function myFunction(name,job)
-{
-alert("Siden " + name + ", under " + job);
-}
-</script>
+
+		</Script>
+
+			<form>
+            <label for="proglangs">Velg:</label>
+            <select name="select-pl" id="proglangs" onChange="printToOutputBox(this)">
+                <option value="ActionScript">ActionScript</option>
+                <option value="AppleScript">AppleScript</option>
+                <option value="Asp">Asp</option>
+                <option value="BASIC">BASIC</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Clojure">Clojure</option>
+                <option value="COBOL">COBOL</option>
+                <option value="ColdFusion">ColdFusion</option>
+                <option value="Erlang">Erlang</option>
+                <option value="Fortran">Fortran</option>
+                <option value="Groovy">Groovy</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Lisp">Lisp</option>
+                <option value="Perl">Perl</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Scala">Scala</option>
+                <option value="Scheme">Scheme</option>
+            </select>
+        </form>
+		<p><br/>
+		  <span id="outputbox">Du har selektert programmeringsspr&aringket</span>
 
 </ul>
 
 <!--Navn og dato-->
-<address>Laget 17.September 2013 <br>
-av Jonas Ljos&#229;k </address>
+<address>Laget 9 Oktober 2013 <br>
+av Jonas Ljosåk </address>
+</center>
 </body>
 </html>
 
